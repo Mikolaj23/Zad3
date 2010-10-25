@@ -1,0 +1,498 @@
+  [4;36;1mSQL (3.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (12.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (12.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSurveys (20101025103430)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "surveys" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" varchar(255), "owner_mail" varchar(255), "auth_key" varchar(255)) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101025103430')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("surveys")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-25 12:51:45) [GET]
+
+NameError (uninitialized constant SurveysController):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-25 12:52:37) [GET]
+
+NameError (uninitialized constant SurveysController):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-25 12:53:05) [GET]
+
+NameError (uninitialized constant SurveysController):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 12:55:53) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 12:57:30) [GET]
+
+NameError (uninitialized constant SurveysController::Survey):
+  app/controllers/surveys_controller.rb:3:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (106.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 12:59:56) [GET]
+
+NameError (uninitialized constant ActionRecord):
+  app/models/survey.rb:1
+  app/controllers/surveys_controller.rb:3:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 13:00:18) [GET]
+  [4;36;1mSurvey Load (0.6ms)[0m   [0;1mSELECT * FROM "surveys" [0m
+
+ActionView::MissingTemplate (Missing template surveys/index.erb in view path app/views):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 13:03:40) [GET]
+  [4;35;1mSurvey Load (0.4ms)[0m   [0mSELECT * FROM "surveys" [0m
+
+ActionView::MissingTemplate (Missing template surveys/index.erb in view path app/views):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 13:04:50) [GET]
+  [4;36;1mSurvey Load (0.5ms)[0m   [0;1mSELECT * FROM "surveys" [0m
+
+ActionView::MissingTemplate (Missing template surveys/index.erb in view path app/views):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 13:05:08) [GET]
+  [4;36;1mSurvey Load (0.6ms)[0m   [0;1mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 13:05:12) [GET]
+
+ActionController::UnknownAction (No action responded to new. Actions: index):
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 13:17:12) [GET]
+  [4;35;1mSurvey Load (0.4ms)[0m   [0mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 13:17:16) [GET]
+Rendering surveys/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/surveys/new.html.haml:
+1: - form_for @survey do |f|
+2: 	%p= f.label :title, "Tytuł"
+3: 	%p= f.text_field :title
+4: 	%p= f.label :owner_mail
+
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/surveys/new.html.haml:1:in `_run_haml_app47views47surveys47new46html46haml'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.3ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 13:19:26) [GET]
+Rendering surveys/new
+
+ActionView::TemplateError (undefined method `merge' for "Adres e-mail":String) on line #5 of app/views/surveys/new.html.haml:
+2: 	%p= f.label :title, "Tytuł"
+3: 	%p= f.text_field :title
+4: 	%p= f.label :owner_mail
+5: 	%p= f.text_field :owner_mail, "Adres e-mail"
+6: 	%p= f.label :auth_key
+7: 	%p= f.password_field :auth_key, "Hasło"
+
+    app/views/surveys/new.html.haml:5:in `_run_haml_app47views47surveys47new46html46haml'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.0.21) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.21) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/surveys/new.html.haml:1:in `_run_haml_app47views47surveys47new46html46haml'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 13:20:49) [GET]
+Rendering surveys/new
+Completed in 92ms (View: 86, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 13:21:57) [GET]
+Rendering surveys/new
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 13:22:32) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"haslo1", "title"=>"Ankieta 1", "owner_mail"=>"email1"}}
+
+ActionController::UnknownAction (No action responded to create. Actions: index and new):
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 13:26:04) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"haslo1", "title"=>"Ankieta 1", "owner_mail"=>"email1"}}
+  [4;36;1mSurvey Create (32.3ms)[0m   [0;1mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description") VALUES('haslo1', 'Ankieta 1', 'email1', NULL)[0m
+
+NameError (undefined local variable or method `category_path' for #<SurveysController:0xb6f59518>):
+  app/controllers/surveys_controller.rb:16:in `create'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 13:26:30) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"haslo1", "title"=>"Ankieta 1", "owner_mail"=>"email1"}}
+  [4;35;1mSurvey Create (0.4ms)[0m   [0mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description") VALUES('haslo1', 'Ankieta 1', 'email1', NULL)[0m
+
+ActionController::RoutingError (survey_url failed to generate from {:controller=>"surveys", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["surveys", :id] - are they all satisfied?):
+  (eval):16:in `survey_path'
+  app/controllers/surveys_controller.rb:16:in `create'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 13:27:19) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"haslo1", "title"=>"Ankieta 1", "owner_mail"=>"email1"}}
+  [4;36;1mSurvey Create (0.4ms)[0m   [0;1mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description") VALUES('haslo1', 'Ankieta 1', 'email1', NULL)[0m
+
+NoMethodError (undefined method `reirect_to' for #<SurveysController:0xb6dddf40>):
+  app/controllers/surveys_controller.rb:16:in `create'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (123.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 13:30:45) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"haslo1", "title"=>"Ankieta 1", "owner_mail"=>"email1"}}
+  [4;35;1mSurvey Create (0.4ms)[0m   [0mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description") VALUES('haslo1', 'Ankieta 1', 'email1', NULL)[0m
+
+NoMethodError (undefined method `reirect_to' for #<SurveysController:0xb7000de0>):
+  app/controllers/surveys_controller.rb:16:in `create'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 13:31:05) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"haslo1", "title"=>"Ankieta 1", "owner_mail"=>"email1"}}
+  [4;36;1mSurvey Create (0.3ms)[0m   [0;1mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description") VALUES('haslo1', 'Ankieta 1', 'email1', NULL)[0m
+Redirected to http://127.0.0.1:3000/surveys/5
+Completed in 13ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 13:31:05) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 5) [0m
+
+ActionView::MissingTemplate (Missing template surveys/show.erb in view path app/views):
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 13:32:37) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mSurvey Load (0.2ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 5) [0m
+Rendering surveys/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/5]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 13:33:03) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mSurvey Load (0.2ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 5) [0m
+Rendering surveys/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/surveys/5]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 13:33:27) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mSurvey Load (0.2ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 5) [0m
+Rendering surveys/show
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/surveys/5]
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 13:33:34) [GET]
+  [4;35;1mSurvey Load (0.8ms)[0m   [0mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 13:33:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 1) [0m
+Rendering surveys/show
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/surveys/1]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 13:33:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSurvey Load (0.2ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 1) [0m
+Rendering surveys/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/1]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 13:33:40) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSurvey Load (0.2ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 2) [0m
+Rendering surveys/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/2]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 13:33:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSurvey Load (0.2ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 3) [0m
+Rendering surveys/show
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/surveys/3]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 13:33:46) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 4) [0m
+Rendering surveys/show
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/surveys/4]

@@ -1,0 +1,9 @@
+Ankiety
+
+- @surveys.each do |survey|
+  %p
+    %b= link_to survey.title , survey
+
+%hr
+
+%p= link_to "Dodaj ankietę", new_survey_path
