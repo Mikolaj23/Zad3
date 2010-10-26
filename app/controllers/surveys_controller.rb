@@ -33,4 +33,9 @@ class SurveysController < ApplicationController
 			render :action => "edit"
 		end 
 	end
+
+	def delete
+		Survey.find(params[:id]).destroy
+		redirect_to surveys_path
+	end
 end

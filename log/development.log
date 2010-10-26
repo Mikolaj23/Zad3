@@ -2372,3 +2372,315 @@ Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:18:30) [GET]
   [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
 Rendering surveys/show
 Completed in 10ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:20:43) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+
+ActionView::TemplateError (undefined local variable or method `delete_survey_path' for #<ActionView::Base:0xb6fc4980>) on line #4 of app/views/surveys/show.html.haml:
+1: %h1= @survey.title
+2: 
+3: %p= link_to "Edytuj", edit_survey_path
+4: %p= link_to "Usyń", delete_survey_path
+
+    app/views/surveys/show.html.haml:4:in `_run_haml_app47views47surveys47show46html46haml'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 19:22:41) [PUT]
+  Parameters: {"commit"=>"Edytuj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"13", "survey"=>{"auth_key"=>"marix", "title"=>"I'm dedd", "owner_mail"=>"fefefwp.pl"}}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/edit
+Completed in 24ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 19:22:46) [PUT]
+  Parameters: {"commit"=>"Edytuj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"13", "survey"=>{"auth_key"=>"marix", "title"=>"I'm dedd", "owner_mail"=>"fefef@wp.pl"}}
+  [4;35;1mSurvey Load (0.5ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Redirected to http://127.0.0.1:3000/surveys/13
+Completed in 17ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:22:46) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+
+ActionView::TemplateError (undefined local variable or method `destroy_survey_path' for #<ActionView::Base:0xb6d8dd60>) on line #4 of app/views/surveys/show.html.haml:
+1: %h1= @survey.title
+2: 
+3: %p= link_to "Edytuj", edit_survey_path
+4: %p= link_to "Usyń", destroy_survey_path
+
+    app/views/surveys/show.html.haml:4:in `_run_haml_app47views47surveys47show46html46haml'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:29:10) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:29:32) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+Completed in 21ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#delete (for 127.0.0.1 at 2010-10-26 19:29:36) [GET]
+  Parameters: {"id"=>"13"}
+
+ActionController::UnknownAction (No action responded to delete. Actions: create, edit, index, new, show, and update):
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#delete (for 127.0.0.1 at 2010-10-26 19:32:45) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+  [4;36;1mSurvey Destroy (0.3ms)[0m   [0;1mDELETE FROM "surveys" WHERE "id" = 13[0m
+Redirected to http://127.0.0.1:3000/surveys/delete
+Completed in 16ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/delete/13]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:32:45) [GET]
+  Parameters: {"id"=>"delete"}
+  [4;35;1mSurvey Load (0.1ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=delete):
+  app/controllers/surveys_controller.rb:7:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (118.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#delete (for 127.0.0.1 at 2010-10-26 19:33:29) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mSurvey Load (0.1ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=13):
+  app/controllers/surveys_controller.rb:38:in `delete'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#delete (for 127.0.0.1 at 2010-10-26 19:34:15) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mSurvey Load (0.2ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=13):
+  app/controllers/surveys_controller.rb:38:in `delete'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:35:13) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mSurvey Load (0.1ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=13):
+  app/controllers/surveys_controller.rb:7:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-26 19:35:22) [GET]
+  [4;35;1mSurvey Load (1.3ms)[0m   [0mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:35:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 1) [0m
+Rendering surveys/show
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/1]
+
+
+Processing SurveysController#delete (for 127.0.0.1 at 2010-10-26 19:35:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 1) [0m
+  [4;36;1mSurvey Destroy (0.2ms)[0m   [0;1mDELETE FROM "surveys" WHERE "id" = 1[0m
+Redirected to http://127.0.0.1:3000/surveys
+Completed in 19ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/delete/1]
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-26 19:35:27) [GET]
+  [4;35;1mSurvey Load (1.1ms)[0m   [0mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:35:29) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSurvey Load (1.2ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 2) [0m
+Rendering surveys/show
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://127.0.0.1/surveys/2]
+
+
+Processing SurveysController#delete (for 127.0.0.1 at 2010-10-26 19:35:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 2) [0m
+  [4;36;1mSurvey Destroy (0.2ms)[0m   [0;1mDELETE FROM "surveys" WHERE "id" = 2[0m
+Redirected to http://127.0.0.1:3000/surveys
+Completed in 10ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/delete/2]
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-26 19:35:30) [GET]
+  [4;35;1mSurvey Load (0.9ms)[0m   [0mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:35:41) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 3) [0m
+Rendering surveys/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/3]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 19:35:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSurvey Load (0.2ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 3) [0m
+Rendering surveys/edit
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/3/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 19:35:46) [PUT]
+  Parameters: {"commit"=>"Edytuj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"3", "survey"=>{"auth_key"=>"haslo1", "title"=>"Ankieta 12", "owner_mail"=>"email1"}}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 3) [0m
+Rendering surveys/edit
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://127.0.0.1/surveys/3]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 19:35:54) [PUT]
+  Parameters: {"commit"=>"Edytuj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"3", "survey"=>{"auth_key"=>"haslo1", "title"=>"Ankieta 12", "owner_mail"=>"email1@wp.pl"}}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 3) [0m
+  [4;36;1mSurvey Update (0.7ms)[0m   [0;1mUPDATE "surveys" SET "title" = 'Ankieta 12', "owner_mail" = 'email1@wp.pl' WHERE "id" = 3[0m
+Redirected to http://127.0.0.1:3000/surveys/3
+Completed in 23ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/3]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:35:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 3) [0m
+Rendering surveys/show
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/3]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:37:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 3) [0m
+Rendering surveys/show
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/3]
+
+
+Processing SurveysController#delete (for 127.0.0.1 at 2010-10-26 19:37:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 3) [0m
+  [4;36;1mSurvey Destroy (0.3ms)[0m   [0;1mDELETE FROM "surveys" WHERE "id" = 3[0m
+Redirected to http://127.0.0.1:3000/surveys
+Completed in 11ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/delete/3]
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-26 19:37:50) [GET]
+  [4;35;1mSurvey Load (0.9ms)[0m   [0mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://127.0.0.1/surveys]
