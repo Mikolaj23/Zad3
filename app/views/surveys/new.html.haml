@@ -1,9 +1,1 @@
-- form_for @survey do |f|
-	%p= f.error_messages :header_message => "Błąd", :message => "Nieprawidłowo wypełniłeś następujące pola:"
-	%p= f.label :title, "Tytuł:"
-	%p= f.text_field :title
-	%p= f.label :owner_mail, "Adres e-mail:"
-	%p= f.text_field :owner_mail
-	%p= f.label :auth_key, "Hasło:"
-	%p= f.password_field :auth_key
-	%p= f.submit "Dodaj"
+= render :partial => "form", :locals => { :survey => @survey, :button_label => "Dodaj"}
