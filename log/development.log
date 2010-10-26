@@ -496,3 +496,1587 @@ Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 13:33:46) [GET]
   [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 4) [0m
 Rendering surveys/show
 Completed in 7ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/surveys/4]
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 19:54:37) [GET]
+  [4;36;1mSurvey Load (2.5ms)[0m   [0;1mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 78ms (View: 71, DB: 3) | 200 OK [http://127.0.0.1/]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 19:54:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 1) [0m
+Rendering surveys/show
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/surveys/1]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 19:54:42) [GET]
+Rendering surveys/new
+Completed in 51ms (View: 45, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 19:54:56) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"", "owner_mail"=>"bez tytulu"}}
+Redirected to http://127.0.0.1:3000/surveys/show
+Completed in 9ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 19:54:56) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mSurvey Load (0.2ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=show):
+  app/controllers/surveys_controller.rb:7:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.5ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 19:55:27) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"Ankieta z tytulem", "owner_mail"=>"bez tytulu"}}
+  [4;35;1mSurvey Create (0.5ms)[0m   [0mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description") VALUES('', 'Ankieta z tytulem', 'bez tytulu', NULL)[0m
+Redirected to http://127.0.0.1:3000/surveys/6
+Completed in 26ms (DB: 1) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 19:55:27) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 6) [0m
+Rendering surveys/show
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/6]
+  [4;36;1mSurvey Create (0.5ms)[0m   [0;1mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description") VALUES(NULL, 't', 'mailll', NULL)[0m
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 19:58:20) [GET]
+  [4;35;1mSurvey Load (0.9ms)[0m   [0mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 19:58:33) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mSurvey Load (0.2ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 7) [0m
+Rendering surveys/show
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/surveys/7]
+  [4;35;1mSurvey Create (0.5ms)[0m   [0mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description") VALUES(NULL, 'oko', 'mailll', NULL)[0m
+  [4;36;1mSurvey Create (0.5ms)[0m   [0;1mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description") VALUES(NULL, 'oko', 'ma', NULL)[0m
+  [4;35;1mSurvey Create (0.5ms)[0m   [0mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description") VALUES('ma', 'oko', NULL, NULL)[0m
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 20:52:45) [GET]
+
+SyntaxError (/home/amigo/rails/zad3/app/models/survey.rb:9: unmatched (: /\A([^@\s]+)@((?:[-a-z0-9]+[a-z]{2,})\Z/):
+  app/controllers/surveys_controller.rb:3:in `index'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (115.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSurvey Load (0.5ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 9) [0m
+  [4;36;1mSurvey Load (0.6ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 9) [0m
+  [4;35;1mSurvey Destroy (0.4ms)[0m   [0mDELETE FROM "surveys" WHERE "id" = 9[0m
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 20:53:56) [GET]
+
+SyntaxError (/home/amigo/rails/zad3/app/models/survey.rb:9: unmatched (: /\A([^@\s]+)@((?:[-a-z0-9]+[a-z]{2,})\Z/):
+  app/controllers/surveys_controller.rb:3:in `index'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 20:53:57) [GET]
+
+SyntaxError (/home/amigo/rails/zad3/app/models/survey.rb:9: unmatched (: /\A([^@\s]+)@((?:[-a-z0-9]+[a-z]{2,})\Z/):
+  app/controllers/surveys_controller.rb:3:in `index'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 9) [0m
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 12) [0m
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 11) [0m
+  [4;36;1mSurvey Load (0.6ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 10) [0m
+  [4;35;1mSurvey Load (0.6ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 10) [0m
+  [4;36;1mSurvey Destroy (0.3ms)[0m   [0;1mDELETE FROM "surveys" WHERE "id" = 10[0m
+  [4;35;1mSurvey Load (0.6ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 8) [0m
+  [4;36;1mSurvey Load (0.6ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 8) [0m
+  [4;35;1mSurvey Destroy (0.3ms)[0m   [0mDELETE FROM "surveys" WHERE "id" = 8[0m
+  [4;36;1mSurvey Load (0.6ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 7) [0m
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 20:55:01) [GET]
+
+SyntaxError (/home/amigo/rails/zad3/app/models/survey.rb:9: unmatched (: /\A([^@\s]+)@((?:[-a-z0-9]+[a-z]{2,})\Z/):
+  app/controllers/surveys_controller.rb:3:in `index'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (121.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 20:56:01) [GET]
+
+SyntaxError (/home/amigo/rails/zad3/app/models/survey.rb:9: syntax error, unexpected tASSOC, expecting kEND
+		:with => /\A([^@\s]+)@((?:[-a-z0-9]+[a-z]{2,})\Z/i, 
+		        ^
+/home/amigo/rails/zad3/app/models/survey.rb:9: unmatched (: /\A([^@\s]+)@((?:[-a-z0-9]+[a-z]{2,})\Z/
+/home/amigo/rails/zad3/app/models/survey.rb:9: syntax error, unexpected ',', expecting kEND
+		:with => /\A([^@\s]+)@((?:[-a-z0-9]+[a-z]{2,})\Z/i, 
+		                                                   ^):
+  app/controllers/surveys_controller.rb:3:in `index'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 20:56:16) [GET]
+
+SyntaxError (/home/amigo/rails/zad3/app/models/survey.rb:9: unmatched (: /\A([^@\s]+)@((?:[-a-z0-9]+[a-z]{2,})\Z/):
+  app/controllers/surveys_controller.rb:3:in `index'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 20:56:42) [GET]
+
+SyntaxError (/home/amigo/rails/zad3/app/models/survey.rb:9: invalid regular expression; there's no previous pattern, to which '*' would define cardinality at 1: /*	
+	validates_format_of :email, :on => :create,
+		:with => /
+/home/amigo/rails/zad3/app/models/survey.rb:9: syntax error, unexpected $undefined, expecting kEND
+		:with => /\A([^@\s]+)@((?:[-a-z0-9]+[a-z]{2,})\Z/i, 
+		           ^
+/home/amigo/rails/zad3/app/models/survey.rb:9: syntax error, unexpected '^', expecting ']'
+		:with => /\A([^@\s]+)@((?:[-a-z0-9]+[a-z]{2,})\Z/i, 
+		               ^
+/home/amigo/rails/zad3/app/models/survey.rb:9: syntax error, unexpected '{', expecting ')'
+		:with => /\A([^@\s]+)@((?:[-a-z0-9]+[a-z]{2,})\Z/i, 
+		                                          ^
+/home/amigo/rails/zad3/app/models/survey.rb:9: syntax error, unexpected ',', expecting ')'
+		:with => /\A([^@\s]+)@((?:[-a-z0-9]+[a-z]{2,})\Z/i, 
+		                                                   ^
+/home/amigo/rails/zad3/app/models/survey.rb:11: unterminated string meets end of file
+/home/amigo/rails/zad3/app/models/survey.rb:11: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR):
+  app/controllers/surveys_controller.rb:3:in `index'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (136.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 20:57:45) [GET]
+  [4;35;1mSurvey Load (1.0ms)[0m   [0mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSurvey Load (0.6ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 7) [0m
+  [4;36;1mSurvey Load (0.6ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 7) [0m
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 20:58:56) [GET]
+  [4;36;1mSurvey Load (1.0ms)[0m   [0;1mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 20:59:46) [GET]
+  [4;35;1mSurvey Load (1.0ms)[0m   [0mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 20:59:49) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 6) [0m
+Rendering surveys/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/6]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 20:59:52) [GET]
+Rendering surveys/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 20:59:55) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"", "owner_mail"=>""}}
+Redirected to http://127.0.0.1:3000/surveys/show
+Completed in 9ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 20:59:55) [GET]
+  Parameters: {"id"=>"show"}
+  [4;35;1mSurvey Load (0.1ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=show):
+  app/controllers/surveys_controller.rb:7:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (104.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:00:03) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"oko", "owner_mail"=>""}}
+Redirected to http://127.0.0.1:3000/surveys/show
+Completed in 9ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 21:00:03) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mSurvey Load (0.1ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=show):
+  app/controllers/surveys_controller.rb:7:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:00:35) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"oko", "owner_mail"=>""}}
+Redirected to http://127.0.0.1:3000/surveys/show
+Completed in 9ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 21:00:35) [GET]
+  Parameters: {"id"=>"show"}
+  [4;35;1mSurvey Load (0.1ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=show):
+  app/controllers/surveys_controller.rb:7:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:00:41) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"oko", "owner_mail"=>"oko"}}
+Redirected to http://127.0.0.1:3000/surveys/show
+Completed in 77ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 21:00:41) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mSurvey Load (0.1ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=show):
+  app/controllers/surveys_controller.rb:7:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:00:48) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"oko", "title"=>"oko", "owner_mail"=>"oko"}}
+Redirected to http://127.0.0.1:3000/surveys/show
+Completed in 9ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 21:00:48) [GET]
+  Parameters: {"id"=>"show"}
+  [4;35;1mSurvey Load (0.2ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=show):
+  app/controllers/surveys_controller.rb:7:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:01:02) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"okoko", "title"=>"oko", "owner_mail"=>"oko"}}
+  [4;36;1mSurvey Create (0.4ms)[0m   [0;1mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description") VALUES('okoko', 'oko', 'oko', NULL)[0m
+Redirected to http://127.0.0.1:3000/surveys/11
+Completed in 27ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 21:01:02) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mSurvey Load (0.2ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 11) [0m
+Rendering surveys/show
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/surveys/11]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:01:37) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"efef", "title"=>"oko", "owner_mail"=>"oko"}}
+
+SyntaxError (/home/amigo/rails/zad3/app/models/survey.rb:9: unmatched (: /\A([^@\s]+)@((?:[-a-z0-9]+[a-z]{2,})\Z/):
+  app/controllers/surveys_controller.rb:15:in `create'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:05:03) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"efef", "title"=>"oko", "owner_mail"=>"oko"}}
+
+NoMethodError (undefined method `email' for #<Survey:0xb6e53ca4>):
+  app/controllers/surveys_controller.rb:15:in `create'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (54.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:05:30) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"efef", "title"=>"oko", "owner_mail"=>"oko"}}
+Redirected to http://127.0.0.1:3000/surveys/show
+Completed in 9ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 21:05:30) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mSurvey Load (0.2ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=show):
+  app/controllers/surveys_controller.rb:7:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (119.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 21:05:36) [GET]
+  [4;35;1mSurvey Load (1.2ms)[0m   [0mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSurvey Create (0.5ms)[0m   [0mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description") VALUES('ma', 'oko', NULL, NULL)[0m
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:06:34) [GET]
+Rendering surveys/new
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:06:45) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"matrix", "title"=>"ded", "owner_mail"=>"fefef"}}
+Redirected to http://127.0.0.1:3000/surveys/show
+Completed in 10ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 21:06:45) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mSurvey Load (0.2ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=show):
+  app/controllers/surveys_controller.rb:7:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:06:57) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"marix", "title"=>"ded", "owner_mail"=>"fefef@wp.pl"}}
+  [4;35;1mSurvey Create (0.4ms)[0m   [0mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description") VALUES('marix', 'ded', 'fefef@wp.pl', NULL)[0m
+Redirected to http://127.0.0.1:3000/surveys/13
+Completed in 28ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 21:06:57) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mSurvey Load (0.2ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 21:07:01) [GET]
+  [4;35;1mSurvey Load (1.2ms)[0m   [0mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 21:07:05) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 21:12:29) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mSurvey Load (0.2ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:12:32) [GET]
+Rendering surveys/new
+
+ActionView::TemplateError (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 4 spaces.) on line #3 of app/views/surveys/new.html.haml:
+1: - form_for @survey do |f|
+2:     = f.error_messages
+3: 	%p= f.label :title, "Tytuł:"
+4: 	%p= f.text_field :title
+5: 	%p= f.label :owner_mail, "Adres e-mail:"
+6: 	%p= f.text_field :owner_mail
+
+    app/views/surveys/new.html.haml:3
+    haml (3.0.21) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.21) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.21) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.21) lib/haml/precompiler.rb:1041:in `block_opened?'
+    haml (3.0.21) lib/haml/precompiler.rb:387:in `push_script'
+    haml (3.0.21) lib/haml/precompiler.rb:224:in `process_line'
+    haml (3.0.21) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.21) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:13:07) [GET]
+Rendering surveys/new
+
+ActionView::TemplateError (undefined local variable or method `haml_temp' for #<ActionView::Base:0xb6d204f4>) on line #10 of app/views/surveys/new.html.haml:
+7: 	%p= f.label :auth_key, "Hasło:"
+8: 	%p= f.password_field :auth_key
+9: 	%p= f.submit "Dodaj"
+
+    app/views/surveys/new.html.haml:10:in `_run_haml_app47views47surveys47new46html46haml'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (132.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:13:44) [GET]
+Rendering surveys/new
+
+ActionView::TemplateError (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.) on line #3 of app/views/surveys/new.html.haml:
+1: - form_for @survey do |f|
+2:   <%  f.error_messages  %>
+3: 	%p= f.label :title, "Tytuł:"
+4: 	%p= f.text_field :title
+5: 	%p= f.label :owner_mail, "Adres e-mail:"
+6: 	%p= f.text_field :owner_mail
+
+    app/views/surveys/new.html.haml:3
+    haml (3.0.21) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.21) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.21) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.21) lib/haml/precompiler.rb:1041:in `block_opened?'
+    haml (3.0.21) lib/haml/precompiler.rb:353:in `push_plain'
+    haml (3.0.21) lib/haml/precompiler.rb:278:in `process_line'
+    haml (3.0.21) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.21) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:14:08) [GET]
+Rendering surveys/new
+
+ActionView::TemplateError (Illegal nesting: nesting within plain text is illegal.) on line #3 of app/views/surveys/new.html.haml:
+1: - form_for @survey do |f|
+2: <%  f.error_messages  %>
+3: 	%p= f.label :title, "Tytuł:"
+4: 	%p= f.text_field :title
+5: 	%p= f.label :owner_mail, "Adres e-mail:"
+6: 	%p= f.text_field :owner_mail
+
+    app/views/surveys/new.html.haml:3
+    haml (3.0.21) lib/haml/precompiler.rb:354:in `push_plain'
+    haml (3.0.21) lib/haml/precompiler.rb:278:in `process_line'
+    haml (3.0.21) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.21) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (139.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:14:54) [GET]
+Rendering surveys/new
+
+ActionView::TemplateError (Illegal nesting: nesting within plain text is illegal.) on line #3 of app/views/surveys/new.html.haml:
+1: - form_for @survey do |f|
+2: <%=  f.error_messages  %>
+3: 	%p= f.label :title, "Tytuł:"
+4: 	%p= f.text_field :title
+5: 	%p= f.label :owner_mail, "Adres e-mail:"
+6: 	%p= f.text_field :owner_mail
+
+    app/views/surveys/new.html.haml:3
+    haml (3.0.21) lib/haml/precompiler.rb:354:in `push_plain'
+    haml (3.0.21) lib/haml/precompiler.rb:278:in `process_line'
+    haml (3.0.21) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.21) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:15:11) [GET]
+Rendering surveys/new
+
+ActionView::TemplateError (Illegal nesting: nesting within plain text is illegal.) on line #3 of app/views/surveys/new.html.haml:
+1: = form_for @survey do |f|
+2: <%=  f.error_messages  %>
+3: 	%p= f.label :title, "Tytuł:"
+4: 	%p= f.text_field :title
+5: 	%p= f.label :owner_mail, "Adres e-mail:"
+6: 	%p= f.text_field :owner_mail
+
+    app/views/surveys/new.html.haml:3
+    haml (3.0.21) lib/haml/precompiler.rb:354:in `push_plain'
+    haml (3.0.21) lib/haml/precompiler.rb:278:in `process_line'
+    haml (3.0.21) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.21) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (137.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:15:26) [GET]
+Rendering surveys/new
+ERROR: compiling _run_haml_app47views47surveys47new46html46haml RAISED compile error
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:2: syntax error, unexpected ')'
+));}\n", 0, false);haml_temp =   f.error_messages;
+ ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:4: syntax error, unexpected ')'
+));}</p>\n<p>#{_hamlout.adjust_...
+ ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:5: unknown regexp option - p
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:5: syntax error, unexpected $undefined
+));}</p>\n<p>#{_hamlout.adjust_tabs(1);...
+         ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:6: syntax error, unexpected ')'
+));}</p>\n<p>#{_hamlout.adjust_...
+ ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:7: unknown regexp option - p
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:7: syntax error, unexpected $undefined
+));}</p>\n<p>#{_hamlout.adjust_tabs(1);...
+         ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:8: syntax error, unexpected ')'
+));}</p>\n<p>#{_hamlout.adjust_...
+ ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:9: unknown regexp option - p
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:9: syntax error, unexpected $undefined
+));}</p>\n<p>#{_hamlout.adjust_tabs(1);...
+         ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:10: syntax error, unexpected ')'
+));}</p>\n", 0, false);end;_ham...
+ ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:10: unterminated string meets end of file
+Function body:           def _run_haml_app47views47surveys47new46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_html=>false, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :format=>:xhtml, :encoding=>nil, :attr_wrapper=>"'", :preserve=>["textarea", "pre", "code"]});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("#{_hamlout.format_script_false_false_false_false_false_true_false(( form_for @survey do |f|
+));}\n", 0, false);haml_temp =   f.error_messages;
+_hamlout.push_text("<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.label :title, "Tytuł:"
+));}</p>\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.text_field :title
+));}</p>\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.label :owner_mail, "Adres e-mail:"
+));}</p>\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.text_field :owner_mail
+));}</p>\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.label :auth_key, "Hasło:"
+));}</p>\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.password_field :auth_key
+));}</p>\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.submit "Dodaj"
+));}</p>\n", 0, false);end;_hamlout.buffer << _hamlout.format_script_false_false_false_false_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/amigo/rails/zad3/app/views/surveys/new.html.haml:10:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-3.0.21/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/haml-3.0.21/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:2: syntax error, unexpected ')'
+));}\n", 0, false);haml_temp =   f.error_messages;
+ ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:4: syntax error, unexpected ')'
+));}</p>\n<p>#{_hamlout.adjust_...
+ ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:5: unknown regexp option - p
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:5: syntax error, unexpected $undefined
+));}</p>\n<p>#{_hamlout.adjust_tabs(1);...
+         ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:6: syntax error, unexpected ')'
+));}</p>\n<p>#{_hamlout.adjust_...
+ ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:7: unknown regexp option - p
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:7: syntax error, unexpected $undefined
+));}</p>\n<p>#{_hamlout.adjust_tabs(1);...
+         ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:8: syntax error, unexpected ')'
+));}</p>\n<p>#{_hamlout.adjust_...
+ ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:9: unknown regexp option - p
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:9: syntax error, unexpected $undefined
+));}</p>\n<p>#{_hamlout.adjust_tabs(1);...
+         ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:10: syntax error, unexpected ')'
+));}</p>\n", 0, false);end;_ham...
+ ^
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:10: unterminated string meets end of file) on line #2 of app/views/surveys/new.html.haml:
+1: = form_for @survey do |f|
+2: =  f.error_messages 
+3: 	%p= f.label :title, "Tytuł:"
+4: 	%p= f.text_field :title
+5: 	%p= f.label :owner_mail, "Adres e-mail:"
+
+    app/views/surveys/new.html.haml:10:in `compile!'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:16:19) [GET]
+Rendering surveys/new
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %p and nested within it.) on line #3 of app/views/surveys/new.html.haml:
+1: = form_for @survey do |f|
+2: %p= f.error_messages 
+3: 	%p= f.label :title, "Tytuł:"
+4: 	%p= f.text_field :title
+5: 	%p= f.label :owner_mail, "Adres e-mail:"
+6: 	%p= f.text_field :owner_mail
+
+    app/views/surveys/new.html.haml:3
+    haml (3.0.21) lib/haml/precompiler.rb:774:in `render_tag'
+    haml (3.0.21) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.21) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.21) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (127.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:17:16) [GET]
+Rendering surveys/new
+
+ActionView::TemplateError (form_for outputs directly to the Haml template.
+Disregard its return value and use the - operator,
+or use capture_haml to get the value as a String.
+) on line #10 of app/views/surveys/new.html.haml:
+7: 	%p= f.label :auth_key, "Hasło:"
+8: 	%p= f.password_field :auth_key
+9: 	%p= f.submit "Dodaj"
+
+    haml (3.0.21) lib/haml/buffer.rb:139:in `format_script_false_false_false_false_false_false_false'
+    app/views/surveys/new.html.haml:10:in `_run_haml_app47views47surveys47new46html46haml'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:17:44) [GET]
+Rendering surveys/new
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:17:50) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"deded", "owner_mail"=>""}}
+Redirected to http://127.0.0.1:3000/surveys/show
+Completed in 8ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 21:17:50) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mSurvey Load (0.1ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=show):
+  app/controllers/surveys_controller.rb:7:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (105.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-25 21:21:02) [GET]
+  Parameters: {"id"=>"show"}
+
+SyntaxError (/home/amigo/rails/zad3/app/controllers/surveys_controller.rb:16: syntax error, unexpected '{', expecting kTHEN or ':' or '\n' or ';'):
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-25 21:21:30) [GET]
+  Parameters: {"id"=>"show"}
+
+SyntaxError (/home/amigo/rails/zad3/app/controllers/surveys_controller.rb:21: syntax error, unexpected $end, expecting kEND):
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-25 21:21:47) [GET]
+  Parameters: {"id"=>"show"}
+  [4;35;1mSurvey Load (0.2ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=show):
+  app/controllers/surveys_controller.rb:7:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-25 21:21:51) [GET]
+  [4;36;1mSurvey Load (1.2ms)[0m   [0;1mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:21:53) [GET]
+Rendering surveys/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:21:56) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"Nowa", "owner_mail"=>""}}
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `valid?' for #<Class:0xb6e9ab90>):
+  app/controllers/surveys_controller.rb:16:in `create'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:22:25) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"Nowa", "owner_mail"=>""}}
+
+ActionView::MissingTemplate (Missing template surveys/create.erb in view path app/views):
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:23:33) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"Nowa", "owner_mail"=>""}}
+Redirected to http://127.0.0.1:3000/surveys/new
+Completed in 9ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:23:34) [GET]
+Rendering surveys/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:23:37) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"Nowa", "owner_mail"=>""}}
+Redirected to http://127.0.0.1:3000/surveys/new
+Completed in 9ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:23:37) [GET]
+Rendering surveys/new
+Completed in 80ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 21:25:30) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"Nowa", "owner_mail"=>"deeff"}}
+Redirected to http://127.0.0.1:3000/surveys/new
+Completed in 10ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:25:30) [GET]
+Rendering surveys/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:27:04) [GET]
+Rendering surveys/new
+ERROR: compiling _run_haml_app47views47surveys47new46html46haml RAISED compile error
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:10: syntax error, unexpected kEND
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:11: unterminated string meets end of file
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:11: syntax error, unexpected $end, expecting ')'
+Function body:           def _run_haml_app47views47surveys47new46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_html=>false, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :format=>:xhtml, :encoding=>nil, :attr_wrapper=>"'", :preserve=>["textarea", "pre", "code"]});_erbout = _hamlout.buffer;__in_erb_template = true;; form_for @survey do |f|;
+_hamlout.push_text("<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.error_messages
+));}</p>\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.label :title, "Tytuł:"
+));}</p>\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.text_field :title
+));}</p>\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.label :owner_mail, "Adres e-mail:"
+));}</p>\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.text_field :owner_mail
+));}</p>\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.label :auth_key, "Hasło:"
+));}</p>\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.password_field :auth_key
+));}</p>\n<p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.submit "Dodaj"
+));}</p>\n#{_hamlout.format_script_false_false_false_false_false_true_false((end
+));}\n", 0, false);end;_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/amigo/rails/zad3/app/views/surveys/new.html.haml:11:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render_without_haml'
+/var/lib/gems/1.8/gems/haml-3.0.21/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/haml-3.0.21/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:10: syntax error, unexpected kEND
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:11: unterminated string meets end of file
+/home/amigo/rails/zad3/app/views/surveys/new.html.haml:11: syntax error, unexpected $end, expecting ')') on line #10 of app/views/surveys/new.html.haml:
+7: 	%p= f.label :auth_key, "Hasło:"
+8: 	%p= f.password_field :auth_key
+9: 	%p= f.submit "Dodaj"
+10: 	=end
+
+    app/views/surveys/new.html.haml:11:in `compile!'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:28:04) [GET]
+Rendering surveys/new
+
+ActionView::TemplateError (You don't need to use "- end" in Haml. Un-indent to close a block:
+- if foo?
+  %strong Foo!
+- else
+  Not foo.
+%p This line is un-indented, so it isn't part of the "if" block) on line #10 of app/views/surveys/new.html.haml:
+7: 	%p= f.label :auth_key, "Hasło:"
+8: 	%p= f.password_field :auth_key
+9: 	%p= f.submit "Dodaj"
+10: - end
+
+    app/views/surveys/new.html.haml:10
+    haml (3.0.21) lib/haml/precompiler.rb:229:in `process_line'
+    haml (3.0.21) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.21) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (127.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:41:50) [GET]
+Rendering surveys/new
+
+ActionView::TemplateError (You don't need to use "- end" in Haml. Un-indent to close a block:
+- if foo?
+  %strong Foo!
+- else
+  Not foo.
+%p This line is un-indented, so it isn't part of the "if" block) on line #10 of app/views/surveys/new.html.haml:
+7: 	%p= f.label :auth_key, "Hasło:"
+8: 	%p= f.password_field :auth_key
+9: 	%p= f.submit "Dodaj"
+10: - end
+
+    app/views/surveys/new.html.haml:10
+    haml (3.0.21) lib/haml/precompiler.rb:229:in `process_line'
+    haml (3.0.21) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.21) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.21) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.21) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 21:42:03) [GET]
+Rendering surveys/new
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 22:03:25) [GET]
+Rendering surveys/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 22:03:29) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"", "owner_mail"=>""}}
+Redirected to http://127.0.0.1:3000/surveys/new.%23%3Csurvey:0xb6ca9ed0%3E
+Completed in 9ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#new to #<survey:0xb6ca9ed0> (for 127.0.0.1 at 2010-10-25 22:03:29) [GET]
+
+ActionView::MissingTemplate (Missing template surveys/new.erb in view path app/views):
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 22:06:19) [GET]
+Rendering surveys/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 22:06:21) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"", "owner_mail"=>""}}
+Redirected to http://127.0.0.1:3000/surveys/new
+Completed in 8ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 22:06:21) [GET]
+Rendering surveys/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 22:06:21) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"", "owner_mail"=>""}}
+Redirected to http://127.0.0.1:3000/surveys/new
+Completed in 8ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 22:06:21) [GET]
+Rendering surveys/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 22:06:22) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"", "owner_mail"=>""}}
+Redirected to http://127.0.0.1:3000/surveys/new
+Completed in 8ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 22:06:22) [GET]
+Rendering surveys/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 22:06:25) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"", "owner_mail"=>"oko"}}
+Redirected to http://127.0.0.1:3000/surveys/new
+Completed in 9ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 22:06:25) [GET]
+Rendering surveys/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-25 22:11:23) [GET]
+Rendering surveys/new
+Completed in 80ms (View: 74, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-25 22:11:27) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"0cvlnFbXD0jxcs95MtlPqsyRCfKoqIN+rF5OVYdIUZE=", "survey"=>{"auth_key"=>"", "title"=>"", "owner_mail"=>""}}
+Rendering surveys/new
+Completed in 39ms (View: 30, DB: 0) | 200 OK [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-26 18:45:21) [GET]
+  [4;36;1mSurvey Load (10.8ms)[0m   [0;1mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 86ms (View: 64, DB: 11) | 200 OK [http://127.0.0.1/]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 18:45:23) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+Completed in 26ms (View: 20, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-26 18:46:52) [GET]
+  [4;36;1mSurvey Load (1.4ms)[0m   [0;1mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-26 18:46:53) [GET]
+Rendering surveys/new
+Completed in 165ms (View: 96, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-26 18:46:55) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "survey"=>{"auth_key"=>"", "title"=>"", "owner_mail"=>""}}
+Rendering surveys/new
+Completed in 35ms (View: 27, DB: 0) | 200 OK [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-26 18:50:12) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "survey"=>{"auth_key"=>"", "title"=>"", "owner_mail"=>""}}
+Rendering surveys/new
+Completed in 50ms (View: 41, DB: 0) | 200 OK [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-26 18:51:15) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "survey"=>{"auth_key"=>"", "title"=>"", "owner_mail"=>""}}
+Rendering surveys/new
+Completed in 46ms (View: 37, DB: 0) | 200 OK [http://127.0.0.1/surveys]

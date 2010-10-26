@@ -12,7 +12,12 @@ class SurveysController < ApplicationController
 	end
 
 	def create
-		survey = Survey.create(params[:survey])
-		redirect_to :action => 'show', :id => survey.id
+		@survey = Survey.new(params[:survey])
+		if @survey.save 
+			redirect_to :action => 'show', :id => @survey.id
+		else 
+			render :action => 'new'
+		end
+
 	end
 end
