@@ -3162,3 +3162,648 @@ Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 20:36:42) [GET]
 Rendering surveys/edit
 Rendered surveys/_form (4.8ms)
 Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/surveys/14/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 20:37:55) [PUT]
+  Parameters: {"commit"=>"Zapisz", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"14", "survey"=>{"auth_key"=>"33333", "title"=>"oooo", "owner_mail"=>"w@wp.pl"}}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+Redirected to http://127.0.0.1:3000/surveys/14
+Completed in 12ms (DB: 0) | 302 Found [http://127.0.0.1/surveys/14]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 20:37:55) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+Rendering surveys/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/surveys/14]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 20:49:54) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+Rendering surveys/edit
+Rendered surveys/_form (4.7ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/surveys/14/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 20:49:57) [PUT]
+  Parameters: {"commit"=>"Zapisz", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"14", "survey"=>{"auth_key"=>"33333", "title"=>"oooo\">", "owner_mail"=>"w@wp.pl"}}
+  [4;35;1mSurvey Load (0.5ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+  [4;36;1mSurvey Update (0.4ms)[0m   [0;1mUPDATE "surveys" SET "title" = 'oooo">' WHERE "id" = 14[0m
+Redirected to http://127.0.0.1:3000/surveys/14
+Completed in 18ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/14]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 20:49:57) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mSurvey Load (0.5ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+Rendering surveys/show
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://127.0.0.1/surveys/14]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 20:49:59) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+Rendering surveys/edit
+Rendered surveys/_form (4.5ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/surveys/14/edit]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 20:50:38) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+Rendering surveys/edit
+Rendered surveys/_form (72.7ms)
+Completed in 81ms (View: 74, DB: 0) | 200 OK [http://127.0.0.1/surveys/14/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 21:11:09) [PUT]
+  Parameters: {"commit"=>"Zapisz", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"14", "survey"=>{"auth_key"=>"33333", "title"=>"oooo", "owner_mail"=>"w@wp.pl"}}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+  [4;35;1mSurvey Update (0.3ms)[0m   [0mUPDATE "surveys" SET "title" = 'oooo' WHERE "id" = 14[0m
+Redirected to http://127.0.0.1:3000/surveys/14
+Completed in 19ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/14]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:11:09) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+Rendering surveys/show
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/14]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 21:11:10) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+Rendering surveys/edit
+Rendered surveys/_form (5.4ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/surveys/14/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 21:11:12) [PUT]
+  Parameters: {"commit"=>"Zapisz", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"14", "survey"=>{"auth_key"=>"33333", "title"=>"oooo", "owner_mail"=>"w@wp.pl"}}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+Redirected to http://127.0.0.1:3000/surveys/14
+Completed in 10ms (DB: 0) | 302 Found [http://127.0.0.1/surveys/14]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:11:12) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+Rendering surveys/show
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/14]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 21:11:14) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+Rendering surveys/edit
+Rendered surveys/_form (4.7ms)
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/surveys/14/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 21:11:15) [PUT]
+  Parameters: {"commit"=>"Zapisz", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"14", "survey"=>{"auth_key"=>"33333", "title"=>"oooo", "owner_mail"=>"w@wp.pl"}}
+  [4;35;1mSurvey Load (0.4ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+Redirected to http://127.0.0.1:3000/surveys/14
+Completed in 12ms (DB: 0) | 302 Found [http://127.0.0.1/surveys/14]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:11:15) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+Rendering surveys/show
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/surveys/14]
+
+
+Processing SurveysController#delete (for 127.0.0.1 at 2010-10-26 21:11:18) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 14) [0m
+  [4;36;1mSurvey Destroy (0.3ms)[0m   [0;1mDELETE FROM "surveys" WHERE "id" = 14[0m
+Redirected to http://127.0.0.1:3000/surveys
+Completed in 11ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/delete/14]
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-26 21:11:18) [GET]
+  [4;35;1mSurvey Load (1.0ms)[0m   [0mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-26 21:11:21) [GET]
+Rendering surveys/new
+Rendered surveys/_form (4.7ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-26 21:11:30) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "survey"=>{"auth_key"=>"defefef", "title"=>"nowa", "owner_mail"=>"fefef@wp.pl"}}
+  [4;36;1mSurvey Create (0.4ms)[0m   [0;1mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description") VALUES('defefef', 'Nowa', 'fefef@wp.pl', NULL)[0m
+Redirected to http://127.0.0.1:3000/surveys/15
+Completed in 18ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:11:30) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 15) [0m
+Rendering surveys/show
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/surveys/15]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSurveys (20101025103430)
+Migrating to CreateLayouts (20101026191005)
+  [4;36;1mSQL (4.5ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "layouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "label" varchar(255)) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101026191005')[0m
+Migrating to AddLayoutIdToSurvey (20101026191512)
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "surveys" ADD "layout_id" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101026191512')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("layouts")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("surveys")[0m
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:27:50) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 15) [0m
+
+NameError (uninitialized constant Base):
+  app/models/layout.rb:1
+  app/controllers/surveys_controller.rb:8:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:29:34) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mSurvey Load (0.4ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 15) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Layout without an ID):
+  app/controllers/surveys_controller.rb:8:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (131.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSurvey Load (1.1ms)[0m   [0;1mSELECT * FROM "surveys" [0m
+  [4;35;1mSurvey Load (1.3ms)[0m   [0mSELECT * FROM "surveys" [0m
+  [4;36;1mSurvey Load (1.6ms)[0m   [0;1mSELECT * FROM "surveys" [0m
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:35:04) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 15) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Layout without an ID):
+  app/controllers/surveys_controller.rb:8:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:35:04) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 15) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Layout without an ID):
+  app/controllers/surveys_controller.rb:8:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:35:05) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mSurvey Load (0.8ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 15) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Layout without an ID):
+  app/controllers/surveys_controller.rb:8:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (138.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:35:05) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 15) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Layout without an ID):
+  app/controllers/surveys_controller.rb:8:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:35:05) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 15) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Layout without an ID):
+  app/controllers/surveys_controller.rb:8:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:35:06) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 15) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Layout without an ID):
+  app/controllers/surveys_controller.rb:8:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:35:06) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 15) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Layout without an ID):
+  app/controllers/surveys_controller.rb:8:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:35:06) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 15) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Layout without an ID):
+  app/controllers/surveys_controller.rb:8:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:35:07) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 15) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Layout without an ID):
+  app/controllers/surveys_controller.rb:8:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (123.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSurvey Load (1.3ms)[0m   [0mSELECT * FROM "surveys" [0m
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 4) [0m
+  [4;35;1mSurvey Load (0.6ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 4) [0m
+  [4;36;1mSurvey Load (0.6ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 4) [0m
+  [4;35;1mSurvey Load (0.7ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 4) [0m
+  [4;36;1mSurvey Load (1.0ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 4) [0m
+  [4;35;1mSurvey Update (0.8ms)[0m   [0mUPDATE "surveys" SET "owner_mail" = 'w@wp.pl' WHERE "id" = 4[0m
+  [4;36;1mSurvey Delete all (9.2ms)[0m   [0;1mDELETE FROM "surveys" WHERE 1=1[0m
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:37:41) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 15) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=15):
+  app/controllers/surveys_controller.rb:7:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.9ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSurvey Delete all (0.4ms)[0m   [0mDELETE FROM "surveys" WHERE 1=1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" [0m
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:38:08) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mSurvey Load (0.2ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 15) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Survey with ID=15):
+  app/controllers/surveys_controller.rb:7:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-26 21:38:24) [GET]
+  [4;35;1mSurvey Load (0.5ms)[0m   [0mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-26 21:38:26) [GET]
+  [4;36;1mLayout Load (0.2ms)[0m   [0;1mSELECT * FROM "layouts" [0m
+Rendering surveys/new
+Rendered surveys/_form (4.5ms)
+Completed in 15ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-26 21:38:37) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "survey"=>{"auth_key"=>"plplpl", "title"=>"Nowa", "owner_mail"=>"wp.@wp.pl"}}
+  [4;35;1mSurvey Create (0.4ms)[0m   [0mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description", "layout_id") VALUES('plplpl', 'Nowa', 'wp.@wp.pl', NULL, 1)[0m
+Redirected to http://127.0.0.1:3000/surveys/16
+Completed in 24ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:38:37) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mLayout Load (0.2ms)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Layout with ID=1):
+  app/controllers/surveys_controller.rb:8:in `show'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mLayout Create (0.5ms)[0m   [0;1mINSERT INTO "layouts" ("label") VALUES('Standardowy')[0m
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:39:26) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mLayout Load (0.3ms)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) [0m
+Rendering surveys/show
+Completed in 15ms (View: 1, DB: 1) | 200 OK [http://127.0.0.1/surveys/16]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 21:39:54) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mLayout Load (0.3ms)[0m   [0mSELECT * FROM "layouts" [0m
+Rendering surveys/edit
+Rendered surveys/_form (4.8ms)
+Completed in 18ms (View: 6, DB: 1) | 200 OK [http://127.0.0.1/surveys/16/edit]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 21:42:58) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mLayout Load (0.3ms)[0m   [0mSELECT * FROM "layouts" [0m
+Rendering surveys/edit
+Rendered surveys/_form (10.0ms)
+Completed in 29ms (View: 18, DB: 1) | 200 OK [http://127.0.0.1/surveys/16/edit]
+  [4;35;1mLayout Create (0.5ms)[0m   [0mINSERT INTO "layouts" ("label") VALUES('Błękit oceanu')[0m
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 21:43:34) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mLayout Load (0.4ms)[0m   [0mSELECT * FROM "layouts" [0m
+Rendering surveys/edit
+Rendered surveys/_form (6.9ms)
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://127.0.0.1/surveys/16/edit]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 21:44:07) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mLayout Load (0.3ms)[0m   [0mSELECT * FROM "layouts" [0m
+Rendering surveys/edit
+Rendered surveys/_form (11.9ms)
+Completed in 30ms (View: 17, DB: 1) | 200 OK [http://127.0.0.1/surveys/16/edit]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 21:44:58) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mLayout Load (0.4ms)[0m   [0mSELECT * FROM "layouts" [0m
+Rendering surveys/edit
+Rendered surveys/_form (11.6ms)
+Completed in 29ms (View: 17, DB: 1) | 200 OK [http://127.0.0.1/surveys/16/edit]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 21:45:42) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mLayout Load (0.3ms)[0m   [0mSELECT * FROM "layouts" [0m
+Rendering surveys/edit
+Rendered surveys/_form (6.7ms)
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://127.0.0.1/surveys/16/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 21:45:46) [PUT]
+  Parameters: {"commit"=>"Zapisz", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"16", "survey"=>{"auth_key"=>"plplpl", "title"=>"Nowa", "owner_mail"=>"wp.@wp.pl", "layout_id"=>"2"}}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mSurvey Update (0.3ms)[0m   [0mUPDATE "surveys" SET "layout_id" = 2 WHERE "id" = 16[0m
+Redirected to http://127.0.0.1:3000/surveys/16
+Completed in 19ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/16]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:45:46) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mLayout Load (0.4ms)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 2) [0m
+Rendering surveys/show
+Completed in 15ms (View: 1, DB: 1) | 200 OK [http://127.0.0.1/surveys/16]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 21:45:47) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mLayout Load (0.4ms)[0m   [0mSELECT * FROM "layouts" [0m
+Rendering surveys/edit
+Rendered surveys/_form (7.6ms)
+Completed in 21ms (View: 10, DB: 1) | 200 OK [http://127.0.0.1/surveys/16/edit]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 21:45:47) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mLayout Load (0.3ms)[0m   [0mSELECT * FROM "layouts" [0m
+Rendering surveys/edit
+Rendered surveys/_form (7.0ms)
+Completed in 19ms (View: 8, DB: 1) | 200 OK [http://127.0.0.1/surveys/16/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 21:45:56) [PUT]
+  Parameters: {"commit"=>"Zapisz", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"16", "survey"=>{"auth_key"=>"plplpl", "title"=>"Nowa", "owner_mail"=>"wp.@wp.pl", "layout_id"=>"1"}}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mSurvey Update (0.3ms)[0m   [0mUPDATE "surveys" SET "layout_id" = 1 WHERE "id" = 16[0m
+Redirected to http://127.0.0.1:3000/surveys/16
+Completed in 16ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/16]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:45:56) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mLayout Load (0.3ms)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) [0m
+Rendering surveys/show
+Completed in 16ms (View: 2, DB: 1) | 200 OK [http://127.0.0.1/surveys/16]

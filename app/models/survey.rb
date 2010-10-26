@@ -9,4 +9,7 @@ class Survey < ActiveRecord::Base
 		:with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, 
 		:message => "Niepoprawny adres e-mail"
 
+	
+	before_create { |survey| survey.title.capitalize!}
+	before_save { |survey| survey.layout_id = 1 if survey.layout_id == nil }
 end

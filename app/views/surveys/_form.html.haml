@@ -6,4 +6,6 @@
 	%p= f.text_field :owner_mail
 	%p= f.label :auth_key, "Hasło:"
 	%p= f.password_field :auth_key
+	%p= f.label :layout_id, "Layout:"
+	%p= f.select :layout_id, (@layouts.collect {|l| [l.label,l.id]}), :required => true
 	%p= f.submit button_label

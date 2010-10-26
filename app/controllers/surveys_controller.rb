@@ -5,10 +5,12 @@ class SurveysController < ApplicationController
 
 	def show
 		@survey = Survey.find(params[:id])
+		@layout = Layout.find(@survey.layout_id)
 	end
 
 	def new
 		@survey = Survey.new
+		@layouts = Layout.all
 	end
 
 	def create
@@ -23,6 +25,7 @@ class SurveysController < ApplicationController
 
 	def edit
 		@survey = Survey.find(params[:id])
+		@layouts = Layout.all
 	end
 
 	def update

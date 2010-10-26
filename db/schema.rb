@@ -9,13 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101025103430) do
+ActiveRecord::Schema.define(:version => 20101026191512) do
+
+  create_table "layouts", :force => true do |t|
+    t.string "label"
+  end
 
   create_table "surveys", :force => true do |t|
-    t.string "title"
-    t.string "description"
-    t.string "owner_mail"
-    t.string "auth_key"
+    t.string  "title"
+    t.string  "description"
+    t.string  "owner_mail"
+    t.string  "auth_key"
+    t.integer "layout_id"
   end
 
 end
