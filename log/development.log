@@ -2080,3 +2080,295 @@ Processing SurveysController#create (for 127.0.0.1 at 2010-10-26 18:51:15) [POST
   Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "survey"=>{"auth_key"=>"", "title"=>"", "owner_mail"=>""}}
 Rendering surveys/new
 Completed in 46ms (View: 37, DB: 0) | 200 OK [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 18:57:34) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 18:57:37) [GET]
+  Parameters: {"id"=>"13"}
+
+ActionController::UnknownAction (No action responded to edit. Actions: create, index, new, and show):
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 19:05:53) [GET]
+  Parameters: {"id"=>"13"}
+
+NoMethodError (undefined method `stringify_keys!' for "13":String):
+  app/controllers/surveys_controller.rb:25:in `new'
+  app/controllers/surveys_controller.rb:25:in `edit'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.4ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 19:06:29) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mSurvey Load (3.0ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+
+ActionView::MissingTemplate (Missing template surveys/edit.erb in view path app/views):
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 19:08:33) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mSurvey Load (0.4ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/edit
+Completed in 22ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/surveys/13/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 19:08:37) [PUT]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"13", "survey"=>{"auth_key"=>"marix", "title"=>"ded", "owner_mail"=>"fefef@wp.pl"}}
+
+ActionController::UnknownAction (No action responded to update. Actions: create, edit, index, new, and show):
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 19:08:49) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/edit
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/13/edit]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 19:08:56) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/edit
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/surveys/13/edit]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 19:09:39) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/edit
+Completed in 22ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/surveys/13/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 19:09:47) [PUT]
+  Parameters: {"commit"=>"Edytuj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"13", "survey"=>{"auth_key"=>"marix", "title"=>"I'm ded", "owner_mail"=>"fefef@wp.pl"}}
+
+ActionController::UnknownAction (No action responded to update. Actions: create, edit, index, new, and show):
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 19:10:22) [PUT]
+  Parameters: {"commit"=>"Edytuj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"13", "survey"=>{"auth_key"=>"marix", "title"=>"I'm ded", "owner_mail"=>"fefef@wp.pl"}}
+
+ActionView::MissingTemplate (Missing template surveys/update.erb in view path app/views):
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 19:13:37) [PUT]
+  Parameters: {"commit"=>"Edytuj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"13", "survey"=>{"auth_key"=>"marix", "title"=>"I'm ded", "owner_mail"=>"fefef@wp.pl"}}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Redirected to http://127.0.0.1:3000/surveys/13
+Completed in 9ms (DB: 0) | 302 Found [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:13:37) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 19:13:41) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mSurvey Load (0.4ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/edit
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/surveys/13/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 19:13:44) [PUT]
+  Parameters: {"commit"=>"Edytuj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"13", "survey"=>{"auth_key"=>"marix", "title"=>"dedd", "owner_mail"=>"fefef@wp.pl"}}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Redirected to http://127.0.0.1:3000/surveys/13
+Completed in 10ms (DB: 0) | 302 Found [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:13:45) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mSurvey Load (0.4ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:16:20) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 19:16:21) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/edit
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/13/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 19:16:26) [PUT]
+  Parameters: {"commit"=>"Edytuj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"13", "survey"=>{"auth_key"=>"marix", "title"=>"dedd", "owner_mail"=>"fefef@wp.pl"}}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.update_attributes):
+  app/controllers/surveys_controller.rb:29:in `update'
+  haml (3.0.21) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (135.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 19:18:05) [PUT]
+  Parameters: {"commit"=>"Edytuj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"13", "survey"=>{"auth_key"=>"marix", "title"=>"dedd", "owner_mail"=>"fefef@wp.pl"}}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+  [4;35;1mSurvey Update (0.8ms)[0m   [0mUPDATE "surveys" SET "title" = 'dedd' WHERE "id" = 13[0m
+Redirected to http://127.0.0.1:3000/surveys/13
+Completed in 32ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:18:05) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+Completed in 17ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 19:18:07) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mSurvey Load (0.2ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/edit
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/surveys/13/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 19:18:13) [PUT]
+  Parameters: {"commit"=>"Edytuj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"13", "survey"=>{"auth_key"=>"marix", "title"=>"I'm dedd", "owner_mail"=>"fefef@wp.pl"}}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+  [4;35;1mSurvey Update (0.3ms)[0m   [0mUPDATE "surveys" SET "title" = 'I''m dedd' WHERE "id" = 13[0m
+Redirected to http://127.0.0.1:3000/surveys/13
+Completed in 18ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:18:13) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mSurvey Load (0.6ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+Completed in 11ms (View: 2, DB: 1) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 19:18:15) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/edit
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/surveys/13/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 19:18:19) [PUT]
+  Parameters: {"commit"=>"Edytuj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"13", "survey"=>{"auth_key"=>"marix", "title"=>"I'm dedd", "owner_mail"=>"fefefwp.pl"}}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/edit
+Completed in 31ms (View: 20, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 19:18:30) [PUT]
+  Parameters: {"commit"=>"Edytuj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"13", "survey"=>{"auth_key"=>"marix", "title"=>"I'm dedd", "owner_mail"=>"fefef@wp.pl"}}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Redirected to http://127.0.0.1:3000/surveys/13
+Completed in 11ms (DB: 0) | 302 Found [http://127.0.0.1/surveys/13]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 19:18:30) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 13) [0m
+Rendering surveys/show
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/surveys/13]

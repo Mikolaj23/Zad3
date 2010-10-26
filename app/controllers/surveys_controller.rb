@@ -20,4 +20,17 @@ class SurveysController < ApplicationController
 		end
 
 	end
+
+	def edit
+		@survey = Survey.find(params[:id])
+	end
+
+	def update
+		@survey = Survey.find(params[:id])
+		if @survey.update_attributes(params[:survey])
+			redirect_to @survey
+		else
+			render :action => "edit"
+		end 
+	end
 end
