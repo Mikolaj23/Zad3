@@ -3807,3 +3807,106 @@ Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:45:56) [GET]
   [4;35;1mLayout Load (0.3ms)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) [0m
 Rendering surveys/show
 Completed in 16ms (View: 2, DB: 1) | 200 OK [http://127.0.0.1/surveys/16]
+
+
+Processing SurveysController#delete (for 127.0.0.1 at 2010-10-26 21:54:12) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 16) [0m
+  [4;35;1mSurvey Destroy (0.3ms)[0m   [0mDELETE FROM "surveys" WHERE "id" = 16[0m
+Redirected to http://127.0.0.1:3000/surveys
+Completed in 14ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/delete/16]
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-26 21:54:12) [GET]
+  [4;36;1mSurvey Load (0.5ms)[0m   [0;1mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-26 21:54:14) [GET]
+  [4;35;1mLayout Load (0.3ms)[0m   [0mSELECT * FROM "layouts" [0m
+Rendering surveys/new
+Rendered surveys/_form (6.5ms)
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-26 21:54:31) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "survey"=>{"auth_key"=>"pwpwpwp", "title"=>"Ankietka", "owner_mail"=>"moj@na.pl", "layout_id"=>"2"}}
+  [4;36;1mSurvey Create (0.4ms)[0m   [0;1mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description", "layout_id") VALUES('pwpwpwp', 'Ankietka', 'moj@na.pl', NULL, 2)[0m
+Redirected to http://127.0.0.1:3000/surveys/17
+Completed in 19ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:54:31) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mSurvey Load (0.3ms)[0m   [0mSELECT * FROM "surveys" WHERE ("surveys"."id" = 17) [0m
+  [4;36;1mLayout Load (0.3ms)[0m   [0;1mSELECT * FROM "layouts" WHERE ("layouts"."id" = 2) [0m
+Rendering surveys/show
+Completed in 15ms (View: 1, DB: 1) | 200 OK [http://127.0.0.1/surveys/17]
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-26 21:54:38) [GET]
+  [4;35;1mSurvey Load (0.7ms)[0m   [0mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:54:42) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 17) [0m
+  [4;35;1mLayout Load (0.3ms)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 2) [0m
+Rendering surveys/show
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://127.0.0.1/surveys/17]
+
+
+Processing SurveysController#edit (for 127.0.0.1 at 2010-10-26 21:54:54) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 17) [0m
+  [4;35;1mLayout Load (0.3ms)[0m   [0mSELECT * FROM "layouts" [0m
+Rendering surveys/edit
+Rendered surveys/_form (78.5ms)
+Completed in 91ms (View: 80, DB: 1) | 200 OK [http://127.0.0.1/surveys/17/edit]
+
+
+Processing SurveysController#update (for 127.0.0.1 at 2010-10-26 21:55:01) [PUT]
+  Parameters: {"commit"=>"Zapisz", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "id"=>"17", "survey"=>{"auth_key"=>"pwpwpwp", "title"=>"Ankietka", "owner_mail"=>"moj@na.pl", "layout_id"=>"1"}}
+  [4;36;1mSurvey Load (0.3ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 17) [0m
+  [4;35;1mSurvey Update (0.4ms)[0m   [0mUPDATE "surveys" SET "layout_id" = 1 WHERE "id" = 17[0m
+Redirected to http://127.0.0.1:3000/surveys/17
+Completed in 23ms (DB: 1) | 302 Found [http://127.0.0.1/surveys/17]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:55:01) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mSurvey Load (0.4ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 17) [0m
+  [4;35;1mLayout Load (0.3ms)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) [0m
+Rendering surveys/show
+Completed in 15ms (View: 2, DB: 1) | 200 OK [http://127.0.0.1/surveys/17]
+
+
+Processing SurveysController#new (for 127.0.0.1 at 2010-10-26 21:55:41) [GET]
+  [4;36;1mLayout Load (0.3ms)[0m   [0;1mSELECT * FROM "layouts" [0m
+Rendering surveys/new
+Rendered surveys/_form (6.3ms)
+Completed in 21ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/surveys/new]
+
+
+Processing SurveysController#create (for 127.0.0.1 at 2010-10-26 21:55:50) [POST]
+  Parameters: {"commit"=>"Dodaj", "authenticity_token"=>"BB02uOKHnZs/viNEo2saG+xlx83B4woke7k2QNMq0hQ=", "survey"=>{"auth_key"=>"ofkeofje", "title"=>"nowa", "owner_mail"=>"kaka@wp.pl", "layout_id"=>"1"}}
+  [4;35;1mSurvey Create (0.4ms)[0m   [0mINSERT INTO "surveys" ("auth_key", "title", "owner_mail", "description", "layout_id") VALUES('ofkeofje', 'Nowa', 'kaka@wp.pl', NULL, 1)[0m
+Redirected to http://127.0.0.1:3000/surveys/18
+Completed in 20ms (DB: 0) | 302 Found [http://127.0.0.1/surveys]
+
+
+Processing SurveysController#show (for 127.0.0.1 at 2010-10-26 21:55:50) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mSurvey Load (0.6ms)[0m   [0;1mSELECT * FROM "surveys" WHERE ("surveys"."id" = 18) [0m
+  [4;35;1mLayout Load (0.3ms)[0m   [0mSELECT * FROM "layouts" WHERE ("layouts"."id" = 1) [0m
+Rendering surveys/show
+Completed in 18ms (View: 1, DB: 1) | 200 OK [http://127.0.0.1/surveys/18]
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-10-26 21:55:55) [GET]
+  [4;36;1mSurvey Load (0.7ms)[0m   [0;1mSELECT * FROM "surveys" [0m
+Rendering surveys/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://127.0.0.1/surveys]
